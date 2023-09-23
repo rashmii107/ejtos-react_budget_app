@@ -7,6 +7,7 @@ const Currency = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const setCurrencyHandler = (currency) => {
+     
     dispatch({
       type: 'CHG_CURRENCY',
       payload: currency,
@@ -38,7 +39,7 @@ const Currency = () => {
         type="button"
         data-bs-toggle="dropdown"
         aria-expanded="false"
-        style={{ backgroundColor: '#93e399', color: '#fff',height:'30px' }}
+        style={{ backgroundColor: '#93e399', color: '#fff',height:'50px' }}
         onClick={() => setIsOpen(!isOpen)}
       >
         Currency {'('}{currencyLabel()}{')'}
